@@ -5,6 +5,9 @@
   (:gen-class))
 
 
+; FIXME: add transactions
+; http://habrahabr.ru/post/186634/
+
 (defspout cdr-generator ["calling-party" "caller-party" "starting-time" "duration" "biller-phone" "route-enter" "route-left"]
   [conf context collector]
   (let [cdr (gen/gen-cdr)]

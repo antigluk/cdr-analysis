@@ -8,8 +8,8 @@
 (defn run-local! []
   (let [cluster (LocalCluster.)]
     (.submitTopology cluster "cdr-storm" {TOPOLOGY-DEBUG true} (mk-topology))
-    ;(Thread/sleep 10000)
-    ;(.shutdown cluster)
+    (Thread/sleep 10000)
+    (.shutdown cluster)
     ))
 
 

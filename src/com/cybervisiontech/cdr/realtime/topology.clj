@@ -10,4 +10,4 @@
   (topology 
    {"1" (spout-spec cdr-generator :p 4)}
    {"2" (bolt-spec {"1" ["calling-party"]}  ;;This bolt would make aggregation on calling party
-                    dummy-hdfs-passer :p 10)}))
+                    dummy-hdfs-passer :p 1)}))
